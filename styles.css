@@ -365,3 +365,29 @@ button:hover {
 .delete-btn:hover {
     background: #b71c1c;
 }
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+.about-us {
+    max-width: 1010px;
+    margin: auto;
+}
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}
+.social-links a i {
+    color: #ffffff;
+    margin-right: 8px;
+}
