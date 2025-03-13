@@ -45,8 +45,8 @@ header {
 /* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 90%; /* Bisa juga 100% jika mau full */
-    height: 1000px; /* Sesuaikan dengan kebutuhan */
+    max-width: 90%;
+    height: 600px; /* Default untuk layar besar */
     margin: 20px auto;
 }
 
@@ -58,8 +58,7 @@ header {
 
 .slideshow-image {
     width: 100%;
-    height: 1000px;
-    background-repeat: no-repeat;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
     animation: fadeIn 1s ease-in-out;
@@ -71,12 +70,12 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.2);
-    color: rgb(255, 253, 253);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    padding: 15px;
+    padding: 12px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 50%;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -87,6 +86,38 @@ header {
 .prev:hover, .next:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: scale(1.1);
+}
+
+/* Responsif untuk perangkat kecil (HP) */
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        max-width: 95%;
+        height: 300px; /* Ukuran lebih kecil agar pas di layar HP */
+    }
+
+    .slideshow-image {
+        height: 300px;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 250px; /* Ukuran lebih kecil untuk layar HP kecil */
+    }
+
+    .slideshow-image {
+        height: 250px;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 
 /* Album Foto Kegiatan */
